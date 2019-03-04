@@ -4,21 +4,28 @@
   "description": "A Place to play and experiment on projects, with ease",
   "main": "index.js",
   "scripts": {
+    "build": "./node_modules/.bin/webpack",
+    "start": "npm run build && node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Subramanian Alagappan",
   "license": "ISC",
   "dependencies": {
-    "@types/react": "^16.8.4",
-    "@types/react-dom": "^16.8.2",
+    "express": "^4.16.4",
     "react": "^16.8.3",
     "react-dom": "^16.8.3"
   },
   "devDependencies": {
-    "awesome-typescript-loader": "^5.2.1",
+    "@types/react": "^16.8.6",
+    "@types/react-dom": "^16.8.2",
+    "html-webpack-plugin": "^3.2.0",
     "source-map-loader": "^0.2.4",
+    "ts-loader": "^5.3.3",
     "typescript": "^3.3.3333",
+    "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3",
-    "webpack-dev-server": "^3.2.0"
+    "webpack-dev-middleware": "^3.6.0",
+    "webpack-dev-server": "^3.2.0",
+    "webpack-hot-middleware": "^2.24.3"
   }
 }
